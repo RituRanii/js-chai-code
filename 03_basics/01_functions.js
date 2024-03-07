@@ -34,5 +34,19 @@ function logInUserMessage(username = "exception"){
     return `${username} just logged in`
 }
 
-console.log(logInUserMessage());
-console.log(logInUserMessage("ritu"));
+// console.log(logInUserMessage());
+// console.log(logInUserMessage("ritu"));
+
+function calculateCartPrice(...num1){//rest and spread operator
+    return num1
+}
+//console.log(calculateCartPrice(200,400,500));
+
+const user = {
+    username: "ritu",
+    price:129
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+handleObject(user)
